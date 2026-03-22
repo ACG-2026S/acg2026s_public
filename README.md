@@ -40,30 +40,30 @@ Monday 2nd period, 10:25am - 12:10pm
 Computer graphics is a technology to computationally represent objects' geometry, appearance and movement. This course is an introduction to the techniques generally seen in computer graphics. The aim of the course is to get familiar with applied mathematics such as linear algebra, vector analysis, partial differential equations, numerical analysis and optimization through the topics in computer graphics. There are C++ programming assignments to acquire research-oriented graphics programming skills such as OpenGL, shader programming, Eigen matrix library, Git and cmake. 
 
 Topics:
-- affine transformation & homography
-- visualization (rasterization / ray casting)
-- continuous optimization
-- parametric curves & surfaces
-- variational mesh deformation
+- Affine transformation & homography
+- Visualization (rasterization / ray casting)
+- Continuous optimization
+- Parametric curves & surfaces
+- Variational mesh deformation
 
 
 ## Lecture Schedule
 
-| Day | Topic | Assignment | Slide |
-|:----|:---|:---|:---|
-|(1)<br>Apr. 20| **Introduction**<br>Digital image, Rasterization in 2D |  | |
-|(2)<br>Apr. 27| **Parametric curve/surface** <br/>Bézier curve, Splines, polynomial |  |  |
-|(3)<br>May. 7| **Coordinate transformation**<br>Affine, Homography transformation |  |  |
-|(4)<br>May 11| **Rasterization1**<br>Graphics pipeline, Depth buffer method, Simple-shading |  |  |
-|(5)<br>May 18| **Guest Lecture by Sei Imai (I.Meisters)**<br> Game development |  |   |
-|(6)<br>May 22| **Spatial data structure**<br> Bounding volume hierarchy, Kd-tree, Octree  |  |  |
-|(7)<br>May 25| **Volume Representation**<br>Implicit modeling, Ray marching, Volume rendering |  |  |
-|(8)<br>Jun. 8| **Rasterization2**<br> Monte-Carlo integration for anti-aliasing, Gaussian splatting |  |  |
-|(9)<br>Jun. 15| **Ray Casting1**<br>Material model, Rendering equation |  | |
-|(10)<br>Jun. 22| **Ray Casting2**<br> Advanced Monte Carlo integration |  |  |
-|(11)<br>June 29| **Optimization**<br> Gradient descent, Back propagation, Newton's method | | |
-|(12)<br>July 6| **Laplacian mesh deformation**<br> Sparse linear system |  |  |
-|(13)<br>July 13| **Differentiable Rendering**<br>Reynolds transport theorem, Edge sampling, Nvdiffrast | |  |
+| Day | Topic | 
+|:----|:---|
+|(1)<br>Apr. 20| **Introduction**<br>Digital image, Rasterization in 2D |  
+|(2)<br>Apr. 27| **Parametric curve/surface** <br/>Bézier curve, Splines, polynomial |  
+|(3)<br>May. 7| **Coordinate transformation**<br>Affine, Homography transformation |  
+|(4)<br>May 11| **Rasterization1**<br>Graphics pipeline, Depth buffer method, Simple-shading | 
+|(5)<br>May 18| **Guest Lecture by Sei Imai (I.Meisters)**<br> Game development | 
+|(6)<br>May 22| **Spatial data structure**<br> Bounding volume hierarchy, Kd-tree, Octree  | 
+|(7)<br>May 25| **Volume Representation**<br>Implicit modeling, Ray marching, Volume rendering | 
+|(8)<br>Jun. 8| **Rasterization2**<br> Monte-Carlo integration for anti-aliasing, Gaussian splatting | 
+|(9)<br>Jun. 15| **Ray Casting1**<br>Material model, Rendering equation | 
+|(10)<br>Jun. 22| **Ray Casting2**<br> Monte Carlo integration for importance sampling |
+|(11)<br>June 29| **Optimization**<br> Gradient descent, Back propagation, Newton's method | 
+|(12)<br>July 6| **Laplacian mesh deformation**<br> Sparse linear system | 
+|(13)<br>July 13| **Differentiable Rendering**<br>Reynolds transport theorem, Edge sampling, Nvdiffrast | 
 
 
 ## Grading
@@ -84,15 +84,15 @@ Look at the following document.
 
 | Task ID | Title | Thumbnail |
 |:---|:---|:---|
-| task01 | **Rasterization of lines and polygons**<br>Winding number | <img src="task01/preview.png" width=100px> |
-| task02 | **Rasterization of parametric curves**<br> Parametric curve, Polynomial root finding | <img src="task02/preview.png" width=100px> |
-| task03 | **Perspectively-correct texture mapping**<br>rasterization of triangle,p Barycentric coordinates | <img src="task03/preview.png" width=100px> |
-| task04 | **Shader practice1** <br>Unity, Rendering pipeline | <img src="task04/preview.png" width=100px> |
-| task05 | **Acceleration of geometry computing**, BVH |  | 
-| task06 | **Shader practice2**<br>Ray marching method, CSG modeling, implicit modeling | <img src="task05/preview.png" width=100px> |
-| task07 | **Gaussian splatting**<br>Ambient occlusion, importance sampling, BVH | <img src="task06/preview.png" width=100px> |
-| task08 | **Monte Carlo integration**<br/>Importance sampling | <img src="task07/preview.png" width=100px> |
-| task09 | **Laplacian Mesh Deformation**<br> Quadratic programming, sparse linear system | <img src="task09/preview.png" width=100px> |
+| task01 | **Rasterization of lines and polygons**<br>Winding number |  |
+| task02 | **Rasterization of parametric curves**<br> Parametric curve, Polynomial root finding |  |
+| task03 | **Perspectively-correct texture mapping**<br>rasterization of triangle,Barycentric coordinates |  |
+| task04 | **Shader practice1**<br>Unity, Rendering pipeline |  |
+| task05 | **Acceleration of geometry computing**<br> Bounding-volume hierarchy |  | 
+| task06 | **Shader practice2**<br>Ray marching method, CSG modeling, implicit modeling |  |
+| task07 | **Gaussian splatting**<br>Rasterization of Gaussian primitives, Tile-based acceleration, Alpha-blending |  |
+| task08 | **Monte Carlo integration**<br/>Importance sampling |  |
+| task09 | **Laplacian Mesh Deformation**<br> Quadratic programming, Sparse linear system |  |
 
 ### Policy
 
@@ -104,58 +104,13 @@ Look at the following document.
 
 ## Slides
 
-- [[1] Introduction](http://nobuyuki-umetani.com/acg2024s/introduction.pdf)
-
-- [[2] C++ programming](http://nobuyuki-umetani.com/acg2024s/cpp.pdf)
-
-- [[3] Git+GitHub](http://nobuyuki-umetani.com/acg2024s/git.pdf)
-
-- [[4] Digital Image](http://nobuyuki-umetani.com/acg2024s/digital_image.pdf)
-
-- [[5] Rasterization in 2D](http://nobuyuki-umetani.com/acg2024s/rasterization_2d.pdf)
-
-- [[6] Barycentric Coordinates](http://nobuyuki-umetani.com/acg2024s/barycentric_coordinates.pdf)
-
-- [[7] Parametric Curve](http://nobuyuki-umetani.com/acg2024s/parametric_curve.pdf)
-
-- [[8] Polynominal Root finding](http://nobuyuki-umetani.com/acg2024s/polynominal.pdf)
-
-- [[9] Coordinate Transformation](http://nobuyuki-umetani.com/acg2024s/transformation.pdf)
-
-- [[10] 2D Homogeneous Transformation](http://nobuyuki-umetani.com/acg2024s/transformation_homogeneous_2d.pdf)
-
-- [[11] 3D Homogeneous Transformation](http://nobuyuki-umetani.com/acg2024s/transformation_homogeneous_3d.pdf)
-
-- [[12] 3D Rasterization](http://nobuyuki-umetani.com/acg2024s/rasterization_3d.pdf)
-
-- [[13] Graphics Pipeline](http://nobuyuki-umetani.com/acg2024s/graphics_pipeline.pdf)
-
-- [[14] Shading](http://nobuyuki-umetani.com/acg2024s/shading.pdf)
-
-- [[15] Subpixel Effect](http://nobuyuki-umetani.com/acg2024s/rasterization_subpixel.pdf)
-
-- [[16] Implicit Modeling](http://nobuyuki-umetani.com/acg2024s/implicit_modeling.pdf)
-
-- [[17]Ray Casting](http://nobuyuki-umetani.com/acg2024s/ray_casting.pdf)
-
-- [[18]Monte Carlo Integration](http://nobuyuki-umetani.com/acg2024s/monte_carlo_integration.pdf)
-
-- [[19]Ray Triangle Collision](http://nobuyuki-umetani.com/acg2024s/ray_triangle_collision.pdf)
-- [[20]Character deformation](http://nobuyuki-umetani.com/acg2024s/character_deformation.pdf)
-- [[21] Jacobian&Hessian](http://nobuyuki-umetani.com/acg2024s/jacobian.pdf)
-- [[22] Optimization](http://nobuyuki-umetani.com/acg2024s/optimization.pdf)
-- [[23] Mesh laplacian](http://nobuyuki-umetani.com/acg2024s/mesh_laplacian.pdf)
-- [[24] Sparse linear system](http://nobuyuki-umetani.com/acg2024s/sparse_linear_system.pdf)
-- [[25] Fluid simulation](http://nobuyuki-umetani.com/acg2024s/fluid_simulation.pdf)
+TO be added
 
 
 
 ## Reading Material
-- Introduction to Computer Graphics by Cem Yuksel](https://www.youtube.com/watch?v=vLSphLtKQ0o&list=PLplnkTzzqsZTfYh4UbhLGpI5kGd5oW_Hh)
-- [Scratchpixel 2.0](https://www.scratchapixel.com/)
+- [Applied Computer Graphics 2024S (The same course two years ago)](https://github.com/nobuyuki83/Applied_Computer_Graphics_2024S)
+- [Introduction to Computer Graphics by Cem Yuksel](https://www.youtube.com/watch?v=vLSphLtKQ0o&list=PLplnkTzzqsZTfYh4UbhLGpI5kGd5oW_Hh)
 - [Awesome Computer Graphics (GitHub)](https://github.com/luisnts/awesome-computer-graphics)
-- [Skinning: Real-time Shape Deformation SIGGRAPH 2014 Course](https://skinning.org/)
-- [Physics-based Animation2023S (Another course by the instructor) ](https://github.com/nobuyuki83/Physics-based_Animation_2023S)
-- [Physics-based Animation2021S (Another course by the instructor) ](https://github.com/nobuyuki83/Physics-based_Animation_2021S)
-- [Applied Computer Graphics 2022S (The same course two years ago)](https://github.com/nobuyuki83/Applied_Computer_Graphics_2022S)
+
 
