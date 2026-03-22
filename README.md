@@ -54,7 +54,7 @@ Topics:
 |(1)<br>Apr. 20| **Introduction**<br>Digital image, Rasterization in 2D |  
 |(2)<br>Apr. 27| **Parametric curve/surface** <br/>Bézier curve, Splines, polynomial |  
 |(3)<br>May. 7| **Coordinate transformation**<br>Affine, Homography transformation |  
-|(4)<br>May 11| **Rasterization1**<br>Graphics pipeline, Depth buffer method, Simple-shading | 
+|(4)<br>May 11| **Rasterization1**<br>Graphics pipeline, Depth buffer method, Simple shading | 
 |(5)<br>May 18| **Guest Lecture by Sei Imai (I.Meisters)**<br> Game development | 
 |(6)<br>May 22| **Spatial data structure**<br> Bounding volume hierarchy, Kd-tree, Octree  | 
 |(7)<br>May 25| **Volume Representation**<br>Implicit modeling, Ray marching, Volume rendering | 
