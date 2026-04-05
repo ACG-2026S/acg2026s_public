@@ -116,7 +116,7 @@ To be added
 
 - 🎥 [Introduction to Computer Graphics by Cem Yuksel](https://www.youtube.com/watch?v=vLSphLtKQ0o&list=PLplnkTzzqsZTfYh4UbhLGpI5kGd5oW_Hh)
 - 🌐 [Awesome Computer Graphics (GitHub)](https://github.com/luisnts/awesome-computer-graphics)
-- 📖 [Fundamentals of Computer Graphics – Shirley & Marschner](https://www.routledge.com/Fundamentals-of-Computer-Graphics/Shirley-Marschner/p/book/9781032365268)
+- 📖 [Fundamentals of Computer Graphics – Shirley & Marschner](https://www.amazon.co.jp/dp/1482229390)
 - 📖 [Real-Time Rendering Resources](https://www.realtimerendering.com/index.html)
 - 📖 [Physically Based Rendering](https://pbr-book.org/4ed/contents)
 - 🌐 [Scratchpixel 2.0](https://www.scratchapixel.com/)
@@ -134,7 +134,7 @@ To be added
 - 🌐 [2D SDF by Inigo Quilez](https://iquilezles.org/articles/distfunctions2d/)
 
 ### Geometry / Mesh Processing
-- 📖 [Polygon Mesh Processing – Botsch et al.](https://www.pmp-book.org/)
+- 📖 [Polygon Mesh Processing – Botsch et al.](https://www.amazon.co.jp/dp/1568814267)
 - 🌐 [Geometry Processing course – Alec Jacobson](https://github.com/alecjacobson/geometry-processing-csc2520)
 
 ### Gaussian Splatting
