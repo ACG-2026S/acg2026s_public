@@ -7,9 +7,10 @@ fn area_of_a_triangle(
     p1: [f32;2],
     p2: [f32;2]) -> f32 {                
     // problem 1: implement below
-
+    // [2] rasterization in 2d, p.28
+    0.5 * ((p1[0] - p0[0]) * (p2[1] - p0[1]) - (p1[1] - p0[1]) * (p2[0] - p0[0]))
     // comment out the next line
-    return 0.0
+    // return 0.0
 }
 
 /// Rasterize a filled triangle using edge-orientation tests at pixel centers.
@@ -53,7 +54,10 @@ fn draw_polygon(vtx2xy: &[[f32; 2]], img_data: &mut [[u8; 4]], width: usize, col
                 let p1x = vtx2xy[i1][0] - x;
                 let p1y = vtx2xy[i1][1] - y;
                 // problem 2: implement below
-
+                // [2] rasterization in 2d, p.12
+                let dot = p0x * p1x + p0y * p1y;
+                let det = p0x * p1y - p0y * p1x;
+                winding_number += det.atan2(dot);
                 // end of edit
             }
             // Convert accumulated angle from radians to winding count.
@@ -85,6 +89,16 @@ fn dda_line(
     let x_inc = dx / steps as f32;
     let y_inc = dy / steps as f32;
     // problem 3: implement below
+    // [2] rasterization in 2d, p.17
+    let mut x = x0;
+    let mut y = y0;
+    for _ in 0..=steps {
+        if x >= 0. && x < width as f32 && y >= 0. && y < height as f32 {
+            img_data[y as usize * width + x as usize] = color;
+        }
+        x += x_inc;
+        y += y_inc;
+    }
 
     // end of edit
 }
@@ -107,7 +121,16 @@ fn draw_circle(
     // Split into two sweeps around 45 degrees to avoid steep-slope gaps.
     let t = r * std::f32::consts::FRAC_1_SQRT_2;
     // problem 4: implement below
-
+    // provided notes in readme
+    for i in 0..(t.ceil() as i32) {
+        let x = i as f32;
+        let y = (r * r - x * x).sqrt();
+        // Plot 8-way symmetry
+        plot(cx + x, cy + y); plot(cx - x, cy + y);
+        plot(cx + x, cy - y); plot(cx - x, cy - y);
+        plot(cx + y, cy + x); plot(cx - y, cy + x);
+        plot(cx + y, cy - x); plot(cx - y, cy - x);
+    }
     // end of edit
 }
 
